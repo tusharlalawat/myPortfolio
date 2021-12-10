@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="CSS/bootstrap.min.css">
     <link rel="stylesheet" href="CSS/font-awesome.min.css">
+    <link rel="stylesheet" href="./CSS/style.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
 </head>
@@ -41,7 +42,7 @@
             <div class="row min-vh-100 align-items-center align-content-center mt-4">
                 <div class="col-md-6 md-5  mt-5 mt-md-0 text-center">
                     <div class="home-img text-center"></div>
-                    <img src="Images/home.jpg" class="rounded-circle img-fluid mw-100 mb-5" alt="">
+                    <img src="Images/home.jpg" class="rounded-circle img-fluid mw-100 mb-5 img" alt="">
                 </div>
                 <div class="col-md-6 md-5 mt-md-0 order-md-first">
                     <div class="home-text"></div>
@@ -72,7 +73,7 @@
             <div class="row align-items-center align-content-center">
 
                 <div class="col-md-6 order-md-last text-center">
-                    <img src="Images/about.jpg" class="rounded-circle img-fluid mw-100 mb-5"  alt="">
+                    <img src="Images/about.jpg" class="rounded-circle img-fluid mw-100 mb-5 img"  alt="">
                 </div>
 
                 <div class="col-md-6 align-items-center">
@@ -117,7 +118,7 @@
             <div class="row align-items-center align-content-center">
 
                 <div class="col-md-6 order-md-last text-center">
-                    <img src="Images/education.jpg" class="rounded-circle img-fluid mw-100 mb-5"  alt="">
+                    <img src="Images/education.jpg" class="rounded-circle img-fluid mw-100 mb-5 img"  alt="">
                 </div>
 
                 <div class="col-md-6 align-items-center">
@@ -159,12 +160,12 @@
 
             <div class="row align-items-center align-content-center">
 
-                <div class="col-md-6 order-md-last text-center">
-                    <img src="Images/skills.jpg" class="rounded-circle img-fluid mw-100 mb-5" alt="">
+                <div class="col-md-6 text-center">
+                    <img src="Images/skills.jpg" class="rounded-circle img-fluid mw-100 mb-5 img" alt="">
                 </div>
             
                 
-                <div class="col-md-6 align-items-center justify-content-center">
+                <div class="col-md-6 align-items-center justify-content-center order-md-last">
                     <div class="col-md-6">
                         <div class="skill-item mb-5">
                             <h3 class="fs-6">C</h3>
@@ -238,8 +239,8 @@
             </div>
             <div class="row text-center">
 
-                <div class="col-md-6 col-lg-4 mb-4">
-                    <div class="project-item shadow-sm p-4 rounded bg-white">
+                <!-- <div class="col-md-6 col-lg-4 mb-4">
+                    <div class="project-item shadow-sm p-4 rounded bg-white card">
                         <div class="icon my-3 text-danger fs-2 ">
                             <a href="https://github.com/tusharlalawat/mlproject"><i class="fas fa-code text-danger"></i></a>
                         </div>
@@ -247,10 +248,10 @@
                         <p class="text-muted">Designed and implemented the K-Nearest-Neighbour algorithm from scratch on C++.</p>
                         <p class="text-muted">(Click on the icon for github link.)</p>
                     </div>
-                </div>
+                </div> -->
 
                 <div class="col-md-6 col-lg-4 mb-4">
-                    <div class="project-item shadow-sm p-4 rounded bg-white">
+                    <div class="project-item shadow-sm p-4 rounded bg-white card">
                         <div class="icon my-3 text-danger fs-2 ">
                             <a href="https://github.com/tusharlalawat/SnakeGame"><i class="fas fa-code text-danger"></i></a>
                         </div>
@@ -261,12 +262,45 @@
                 </div>
 
                 <div class="col-md-6 col-lg-4 mb-4">
-                    <div class="project-item shadow-sm p-4 rounded bg-white">
+                    <div class="project-item shadow-sm p-4 rounded bg-white card">
+                        <div class="icon my-3 text-danger fs-2 ">
+                            <a href="https://github.com/tusharlalawat/mlproject"><i class="fas fa-code text-danger"></i></a>
+                        </div>
+                        <h3 class="fs-5 py-2">Iris Classification with KNN</h3>
+                        <p class="text-muted">Designed and implemented the K-Nearest-Neighbour algorithm from scratch on C++.</p>
+                        <p class="text-muted">(Click on the icon for github link.)</p>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-4 mb-4">
+                    <div class="project-item shadow-sm p-4 rounded bg-white card">
+                        <div class="icon my-3 text-danger fs-2 ">
+                            <a href="https://github.com/tusharlalawat/Weather-app"><i class="fas fa-code text-danger"></i></a>
+                        </div>
+                        <h3 class="fs-5 py-2">Weather App</h3>
+                        <p class="text-muted">Created a Weather app, where one can check temprature of any location in the world.</p>
+                        <p class="text-muted">(Click on the icon for github link.)</p>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-4 mb-4">
+                    <div class="project-item shadow-sm p-4 rounded bg-white card">
                         <div class="icon my-3 text-danger fs-2 ">
                             <a href="https://github.com/tusharlalawat/To-doList"><i class="fas fa-code text-danger"></i></a>
                         </div>
                         <h3 class="fs-5 py-2">To-Do List</h3>
                         <p class="text-muted">Created a Todo list webPage to maintain your daily life tasks.</p>
+                        <p class="text-muted">(Click on the icon for github link.)</p>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-4 mb-4">
+                    <div class="project-item shadow-sm p-4 rounded bg-white card">
+                        <div class="icon my-3 text-danger fs-2 ">
+                            <a href="https://github.com/tusharlalawat/notes-app"><i class="fas fa-code text-danger"></i></a>
+                        </div>
+                        <h3 class="fs-5 py-2">Notes Taking app</h3>
+                        <p class="text-muted">Created a notes taking app with the help of Node.Js.</p>
                         <p class="text-muted">(Click on the icon for github link.)</p>
                     </div>
                 </div>
@@ -290,7 +324,7 @@
             </div>
 
             <div class="row">
-                <div class="col-md-5">
+                <div class="col-md-5 bg-gray">
                     <div class="contact-item d-flex mb-3">
                         <div class="icon fs-4 text-danger">
                             <i class="fas fa-envelope"></i>
@@ -371,7 +405,7 @@
         <div class="container-lg">
             <div class="row">
                 <div class="col-lg-12 text-center">
-                    <!-- <p class="m-0 text-center text-muted">&copy; 2021 The Webshala</p> -->
+                    <p class="m-0 text-center text-muted">&copy; 2021 The Webshala</p>
                     <img src="/Images/icon.svg" alt="">
                 </div>
             </div>
