@@ -9,6 +9,8 @@
     <link rel="stylesheet" href="./CSS/style.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 </head>
 
 <body class="bg-light"> 
@@ -40,11 +42,11 @@
     <section class="home bg-dark" id="home">
         <div class="container-lg">
             <div class="row min-vh-100 align-items-center align-content-center mt-4">
-                <div class="col-md-6 md-5  mt-5 mt-md-0 text-center">
+                <div class="col-md-6 md-5  mt-5 mt-md-0 text-center" data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1000">
                     <div class="home-img text-center"></div>
                     <img src="Images/home.jpg" class="rounded-circle img-fluid mw-100 mb-5 img" alt="">
                 </div>
-                <div class="col-md-6 md-5 mt-md-0 order-md-first">
+                <div class="col-md-6 md-5 mt-md-0 order-md-first" data-aos="fade-up" data-aos-delay="500">
                     <div class="home-text"></div>
                     <h2 class="fs-4 text-white">Tushar Lalawat</h2>
                     <p class="fs-1 fw-bold text-white">I'm a <span class="text-danger text-uppercase">Software</span></p>
@@ -72,11 +74,11 @@
 
             <div class="row align-items-center align-content-center">
 
-                <div class="col-md-6 order-md-last text-center">
+                <div class="col-md-6 order-md-last text-center" data-aos="fade-left" data-aos-delay="500">
                     <img src="Images/about.jpg" class="rounded-circle img-fluid mw-100 mb-5 img"  alt="">
                 </div>
 
-                <div class="col-md-6 align-items-center">
+                <div class="col-md-6 align-items-center" data-aos="fade-up" data-aos-duration="2000">
                     <div class="about-text">
                         <h3 class="fs-4 mb-3">Hello, I'm Tushar Lalawat,<br> Welcome to my website.</h3>
                         <p class="text-muted">I am a pre-final year undergraduate student at NIT Jalandhar, Majoring in computer science.
@@ -106,7 +108,7 @@
 
     <!-- Education Section starts -->
     <section class="education bg-gray py-5" id="education">
-        <div class="container-lg py-4">
+        <div class="container-lg py-4" data-aos="fade-up" data-aos-duration="2000">
 
             <div class="row justify-content-center">
                 <div class="col-lg-8">
@@ -161,12 +163,12 @@
 
             <div class="row align-items-center align-content-center">
 
-                <div class="col-md-6 text-center">
+                <div class="col-md-6 text-center" data-aos="fade-down" data-aos-offset="300" data-aos-easing="ease-in-sine">
                     <img src="Images/skills.jpg" class="rounded-circle img-fluid mw-100 mb-5 img" alt="">
                 </div>
             
                 
-                <div class="col-md-6 align-items-center justify-content-center order-md-last">
+                <div class="col-md-6 align-items-center justify-content-center order-md-last" data-aos="fade-up" data-aos-anchor-placement="bottom-bottom">
                     <div class="col-md-6">
                         <div class="skill-item mb-5">
                             <h3 class="fs-6">C</h3>
@@ -256,7 +258,7 @@
                     </div>
                 </div>
             </div>
-            <div class="row text-center">
+            <div class="row text-center" data-aos="fade-up" data-aos-duration="2000">
 
                 <!-- <div class="col-md-6 col-lg-4 mb-4">
                     <div class="project-item shadow-sm p-4 rounded bg-white card">
@@ -269,7 +271,7 @@
                     </div>
                 </div> -->
 
-                <div class="col-md-6 col-lg-4 mb-4">
+                <div class="col-md-6 col-lg-4 mb-4" data-aos="flip-up">
                     <div class="project-item shadow-sm p-4 rounded bg-white card">
                         <div class="icon my-3 text-danger fs-2 ">
                             <a href="https://github.com/tusharlalawat/SnakeGame"><i class="fas fa-code text-danger"></i></a>
@@ -280,7 +282,7 @@
                     </div>
                 </div>
 
-                <div class="col-md-6 col-lg-4 mb-4">
+                <div class="col-md-6 col-lg-4 mb-4" data-aos="flip-up">
                     <div class="project-item shadow-sm p-4 rounded bg-white card">
                         <div class="icon my-3 text-danger fs-2 ">
                             <a href="https://github.com/tusharlalawat/mlproject"><i class="fas fa-code text-danger"></i></a>
@@ -291,7 +293,7 @@
                     </div>
                 </div>
 
-                <div class="col-md-6 col-lg-4 mb-4">
+                <div class="col-md-6 col-lg-4 mb-4" data-aos="flip-up">
                     <div class="project-item shadow-sm p-4 rounded bg-white card">
                         <div class="icon my-3 text-danger fs-2 ">
                             <a href="https://github.com/tusharlalawat/Weather-app"><i class="fas fa-code text-danger"></i></a>
@@ -302,7 +304,7 @@
                     </div>
                 </div>
 
-                <div class="col-md-6 col-lg-4 mb-4">
+                <div class="col-md-6 col-lg-4 mb-4" data-aos="fade-up" data-aos-delay="700">
                     <div class="project-item shadow-sm p-4 rounded bg-white card">
                         <div class="icon my-3 text-danger fs-2 ">
                             <a href="https://github.com/tusharlalawat/To-doList"><i class="fas fa-code text-danger"></i></a>
@@ -313,7 +315,7 @@
                     </div>
                 </div>
 
-                <div class="col-md-6 col-lg-4 mb-4">
+                <div class="col-md-6 col-lg-4 mb-4" data-aos="fade-up" data-aos-delay="700">
                     <div class="project-item shadow-sm p-4 rounded bg-white card">
                         <div class="icon my-3 text-danger fs-2 ">
                             <a href="https://github.com/tusharlalawat/notes-app"><i class="fas fa-code text-danger"></i></a>

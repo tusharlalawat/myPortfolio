@@ -67,6 +67,10 @@
 
 // $formContact.addEventListener("submit", sendForm);
 
+$(function() {
+    AOS.init();
+});
+
 function sendEmail(){
     Email.send({
         SecureToken: "06650e55-e626-4321-a696-b5664cef9913",
