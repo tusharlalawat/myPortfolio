@@ -18,7 +18,7 @@
 }
 
 @media(max-width: 990px){
-    .card{
+    .card{  
         margin: 20px;
     }
 } 
@@ -29,3 +29,18 @@
     opacity: 80%;
     box-shadow: 0 10px 20px rgba(0,0,0,.12), 0 4px 8px rgba(0,0,0,.06);
 }
+
+/* .icons {
+    fill: black;
+    display: inline-block;
+    height: 100%;
+    outline: none;
+    width: 100%;
+}
+
+.icons:focus, .icons:hover {
+    fill: aliceblue;
+    background-color: black;
+    border-radius: 2px;
+    cursor: pointer;
+} */

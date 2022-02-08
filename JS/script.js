@@ -31,38 +31,50 @@
 //     );
 // }
 
-const token = "152f05a1-3548-4b2c-9b40-ab1b24fabb0a";
-const $formContact = document.querySelector("#contact");
-statusTxt = $formContact.querySelector(".button-area span");
+// const token = "152f05a1-3548-4b2c-9b40-ab1b24fabb0a";
+// const $formContact = document.querySelector("#contact");
+// statusTxt = $formContact.querySelector(".button-area span");
 
-const sendForm = event => {
-  event.preventDefault();
-  const message = {
-    name: document.querySelector("#name").value,
-    email: document.querySelector("#email").value,
-    subject: document.querySelector("#subject").value,
-    text: document.querySelector("#message").value
-  };
-  smtpJS(message);
-};
+// const sendForm = event => {
+//   event.preventDefault();
+//   const message = {
+//     name: document.querySelector("#name").value,
+//     email: document.querySelector("#email").value,
+//     subject: document.querySelector("#subject").value,
+//     text: document.querySelector("#message").value
+//   };
+//   smtpJS(message);
+// };
 
-const smtpJS = message => {
-  try {
-    Email.send(
-      "tushar.lalawat7781@gmail.com",
-      "tk3850132@gmail.com",
-      `${message.name} - ${message.subject}`,
-      message.text,
-      { token }
+// const smtpJS = message => {
+//   try {
+//     Email.send(
+//       "tushar.lalawat7781@gmail.com",
+//       "tk3850132@gmail.com",
+//       `${message.name} - ${message.subject}`,
+//       message.text,
+//       { token }
+//     );
+//     statusTxt.style.color = "green";
+//     statusTxt.style.display = "block";
+//     statusTxt.innerText = "Your message has been sent.";
+//   } catch (e) {
+//     statusTxt.style.color = "red";
+//     statusTxt.style.display = "block";
+//     statusTxt.innerText = "Sorry, failed to send your message!";
+//   }
+// };
+
+// $formContact.addEventListener("submit", sendForm);
+
+function sendEmail(){
+    Email.send({
+        SecureToken: "06650e55-e626-4321-a696-b5664cef9913",
+        To : 'rk3850132@gmail.com',
+        From : document.getElementById("email"),
+        Subject : "Email from portfolio",
+        Body : "And this is the body"
+    }).then(
+        message => alert(message)
     );
-    statusTxt.style.color = "green";
-    statusTxt.style.display = "block";
-    statusTxt.innerText = "Your message has been sent.";
-  } catch (e) {
-    statusTxt.style.color = "red";
-    statusTxt.style.display = "block";
-    statusTxt.innerText = "Sorry, failed to send your message!";
-  }
-};
-
-$formContact.addEventListener("submit", sendForm);
+}
